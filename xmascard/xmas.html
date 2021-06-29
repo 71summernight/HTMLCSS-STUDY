@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2020을 보내며</title>
+<meta property="og:image"
+    content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+<meta property="og:title" content="찌니의 카드">
+<meta property="og:description" content="2020을 추억하며">
+
+<script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+<style>
+    * {
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+    body {
+        background-color: #9b070f;
+
+    }
+
+    .envelope {
+        background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        margin-top: 200px;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+    }
+
+    .envelopemessage {
+        color: honeydew;
+        text-align: center;
+    }
+
+    .latter-close {
+        display: block;
+    }
+
+    .latter-open {
+        display: none;
+    }
+
+    .rtan {
+        background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker+(1).gif');
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-color: white;
+        margin: 100px auto auto auto;
+        border-radius: 100px;
+        border: 3px solid white;
+        box-shadow: 0px 0px 10px 0px white;
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mesaage-box {
+        background-color: ivory;
+        width: 400px;
+        margin: auto;
+        color: brown;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        box-shadow: 0px 0px 10px 0px white;
+
+    }
+
+    .from {
+        text-align: right;
+        margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: 760px) {
+        .mesaage-box {
+            width: 300px;
+            padding: 20px;
+        }
+
+    }
+</style>
+<script>
+    function open_latter() {
+        document.getElementsByClassName("latter-close")[0].style.display = 'none'
+        document.getElementsByClassName("latter-open")[0].style.display = 'block'
+
+    }
+    function go_rtan() {
+        alert('앗 어떻게 찾았지!')
+
+    }
+</script>
+</head>
+
+<body>
+    <div class="latter-close">
+        <div class="envelope" onclick="open_latter()"></div>
+        <h2 class="envelopemessage">봉투를 열어봐!</h2>
+    </div>
+
+    <div class="latter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2020년 수고많았어!</h1>
+        <div class="mesaage-box">
+            친구들에게. <br />
+            올해 이런저런 일이 많았는데 <br />
+            너희 덕분에 하나도 힘들지 않았어 <br />
+            내년에도 우리 우정 변치말자 <br />
+            연말에 다 같이 못 봐서 아쉽다 <br />
+            새해 복 많이 받고 행복해! <br />
+            <p class="from">2021.01.03 현진이가</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
